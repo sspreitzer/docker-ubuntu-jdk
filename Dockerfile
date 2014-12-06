@@ -1,6 +1,6 @@
 FROM ubuntu:14.04.1
 
-ENV JVERSION 6
+ENV JVERSION 7
 ADD java${JVERSION}.preseed /root/
 RUN debconf-set-selections /root/java${JVERSION}.preseed && \
   apt-get update && \
